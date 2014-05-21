@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E76DCA6-5097-4B06-9049-5BA64E51C069}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>JRILibrarySystem.My.MyApplication</StartupObject>
+    <RootNamespace>JRILibrarySystem</RootNamespace>
+    <AssemblyName>JRILibrarySystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>JRILibrarySystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>JRILibrarySystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CloudToolkitN6">
+      <HintPath>C:\Users\End User\Documents\CloudToolkitN6.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add\frmAddBook.Designer.vb">
+      <DependentUpon>frmAddBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add\frmAddBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add\frmAddStudent.Designer.vb">
+      <DependentUpon>frmAddStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add\frmAddStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmAddUser.Designer.vb">
+      <DependentUpon>frmAddUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmAddUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Borrow and Return Book\frmBorrowBook.Designer.vb">
+      <DependentUpon>frmBorrowBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Borrow and Return Book\frmBorrowBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Borrow and Return Book\frmReturnBook.Designer.vb">
+      <DependentUpon>frmReturnBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Borrow and Return Book\frmReturnBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\DatabaseFunctions.vb" />
+    <Compile Include="Functions\Utilities.vb" />
+    <Compile Include="GlobalVariables.vb" />
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modify\frmModifyStudents.Designer.vb">
+      <DependentUpon>frmModifyStudents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modify\frmModifyStudents.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modify\frmModifyBook.Designer.vb">
+      <DependentUpon>frmModifyBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modify\frmModifyBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splashscreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splashscreen.Designer.vb">
+      <DependentUpon>Splashscreen.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Add\frmAddBook.resx">
+      <DependentUpon>frmAddBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add\frmAddStudent.resx">
+      <DependentUpon>frmAddStudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmAddUser.resx">
+      <DependentUpon>frmAddUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrow and Return Book\frmBorrowBook.resx">
+      <DependentUpon>frmBorrowBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrow and Return Book\frmReturnBook.resx">
+      <DependentUpon>frmReturnBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modify\frmModifyStudents.resx">
+      <DependentUpon>frmModifyStudents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modify\frmModifyBook.resx">
+      <DependentUpon>frmModifyBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splashscreen.resx">
+      <DependentUpon>Splashscreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Setting_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jrimainlogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floppy-Small-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recycle-Empty-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-user-group-delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jrimainlogo1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
